@@ -12,6 +12,16 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Everblush/everblush.vim'
 Plugin 'tpope/vim-commentary'
 Plugin 'preservim/nerdtree'
+" Install nodejs:
+" $ curl -sL install-node.now.sh | sudo bash
+" Install yarn
+" $ curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
+" Install project using yarn
+" ~/.vim/bundle/coc.nvim$ yarn install
+" Remove yarn
+" ~$ rm -rf .yarn .yarnrc 
+" And delete the added path in .bashrc
+Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 
 call vundle#end()            " required
 
