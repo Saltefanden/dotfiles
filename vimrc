@@ -1,3 +1,5 @@
+" Also get FiraCode as the preferred font
+" https://github.com/tonsky/FiraCode
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -22,7 +24,8 @@ Plugin 'preservim/nerdtree'
 " ~$ rm -rf .yarn .yarnrc 
 " And delete the added path in .bashrc
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
-
+" Add language servers: CocInstall <language>
+" https://github.com/neoclide/coc.nvim/wiki/Language-servers
 call vundle#end()            " required
 
 filetype plugin indent on    " required
