@@ -42,6 +42,7 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+nnoremap Q <nop>
 
 let g:everblushNR=1
 colo everblush
@@ -52,6 +53,9 @@ colo everblush
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 " autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
+" Proper search highlighting
+set hlsearch
+set incsearch
 
 " May need for vim (not neovim) since coc.nvim calculate byte offset by count
 " utf-8 byte sequence.
