@@ -61,7 +61,7 @@ set incsearch
 " Backspacing better
 set backspace=indent,eol,start  " more powerful backspacing
 
-au BufEnter * :SemanticHighlight
+au BufEnter,BufWritePost * :SemanticHighlight
 
 " May need for vim (not neovim) since coc.nvim calculate byte offset by count
 " utf-8 byte sequence.
