@@ -61,7 +61,7 @@ set incsearch
 " Backspacing better
 set backspace=indent,eol,start  " more powerful backspacing
 
-au BufEnter,BufWritePost * :SemanticHighlight
+au BufEnter,BufWritePost * if &ft!='text' && &ft!='help' | execute 'SemanticHighlight' | endif
 
 " May need for vim (not neovim) since coc.nvim calculate byte offset by count
 " utf-8 byte sequence.
