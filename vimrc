@@ -15,6 +15,8 @@ Plugin 'Everblush/everblush.vim'
 Plugin 'tpope/vim-commentary'
 Plugin 'preservim/nerdtree'
 Plugin 'jaxbot/semantic-highlight.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 " Install nodejs:
 " $ curl -sL install-node.now.sh | sudo bash
 " Install yarn
@@ -47,7 +49,7 @@ nnoremap Q <nop>
 
 let g:everblushNR=1
 colo everblush
-
+let g:airline_theme='minimalist'
 " Start NERDTree and put the cursor back in the other window.
 " autocmd VimEnter * NERDTree | wincmd p
 
