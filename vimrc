@@ -17,6 +17,9 @@ Plugin 'preservim/nerdtree'
 Plugin 'jaxbot/semantic-highlight.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Yggdroot/indentLine'
+Plugin 'townk/vim-autoclose'
 " Install nodejs:
 " $ curl -sL install-node.now.sh | sudo bash
 " Install yarn
@@ -50,6 +53,7 @@ nnoremap Q <nop>
 let g:everblushNR=1
 colo everblush
 let g:airline_theme='minimalist'
+let g:airline#extensions#branch#enabled=1
 " Start NERDTree and put the cursor back in the other window.
 " autocmd VimEnter * NERDTree | wincmd p
 
@@ -63,7 +67,16 @@ set incsearch
 " Backspacing better
 set backspace=indent,eol,start  " more powerful backspacing
 
+" Run semantic highlighting upon entering buffer or writing
 au BufEnter,BufWritePost * if &ft!='text' && &ft!='help' | execute 'SemanticHighlight' | endif
+
+" Set tabstop 2, shiftwidth 2, expandtabs, softtabstop
+set ts=2 sw=2 et sts=2
+
+" Show matching parens and show commands
+set showmatch showcmd
+
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " May need for vim (not neovim) since coc.nvim calculate byte offset by count
 " utf-8 byte sequence.
