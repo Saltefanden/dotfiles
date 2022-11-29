@@ -14,6 +14,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Everblush/everblush.vim'
 Plugin 'tpope/vim-commentary'
 Plugin 'preservim/nerdtree'
+Plugin 'jaxbot/semantic-highlight.vim'
 " Install nodejs:
 " $ curl -sL install-node.now.sh | sudo bash
 " Install yarn
@@ -56,6 +57,9 @@ colo everblush
 " Proper search highlighting
 set hlsearch
 set incsearch
+
+" Backspacing better
+set backspace=indent,eol,start  " more powerful backspacing
 
 " May need for vim (not neovim) since coc.nvim calculate byte offset by count
 " utf-8 byte sequence.
