@@ -20,6 +20,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Yggdroot/indentLine'
 Plugin 'townk/vim-autoclose'
+Plugin 'frazrepo/vim-rainbow'
 " Install nodejs:
 " $ curl -sL install-node.now.sh | sudo bash
 " Install yarn
@@ -77,6 +78,12 @@ set ts=2 sw=2 et sts=2
 set showmatch showcmd
 
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+
+" au FileType c,cpp,objc,objcpp,py call rainbow#load()
+let g:rainbow_active = 1
+
+" Set background transparent?
+hi Normal guibg=NONE ctermbg=NONE
 
 " May need for vim (not neovim) since coc.nvim calculate byte offset by count
 " utf-8 byte sequence.
