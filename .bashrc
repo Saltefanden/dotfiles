@@ -116,6 +116,7 @@ if [ -f ~/.bash_local ]; then
     . ~/.bash_local
 fi
 
+## Put this in bash_local
 # DOCKER_DISTRO="Debian"  
 # DOCKER_DIR=/mnt/wsl/shared-docker  
 # DOCKER_SOCK="$DOCKER_DIR/docker.sock"  
@@ -130,4 +131,9 @@ bind 'TAB:menu-complete'
 bind "set show-all-if-ambiguous on"
 bind "set completion-ignore-case On"
 bind "set menu-complete-display-prefix on"
+
+## Put this in bash_local
+# chrome(){
+#   /mnt/c/Users/nimu/AppData/Local/Google/Chrome/Application/chrome.exe "$(wslpath -w $(pwd)/$1)"
+# }
 
