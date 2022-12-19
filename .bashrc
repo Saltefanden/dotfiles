@@ -137,3 +137,6 @@ bind "set menu-complete-display-prefix on"
 #   /mnt/c/Users/nimu/AppData/Local/Google/Chrome/Application/chrome.exe "$(wslpath -w $(pwd)/$1)"
 # }
 
+# chropen(){
+#   /mnt/c/Users/nimu/AppData/Local/Google/Chrome/Application/chrome.exe "$1"
+# }
