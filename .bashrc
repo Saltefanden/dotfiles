@@ -132,6 +132,9 @@ bind "set show-all-if-ambiguous on"
 bind "set completion-ignore-case On"
 bind "set menu-complete-display-prefix on"
 
+mkd(){
+  mkdir "$1" && cd "$1"
+}
 ## Put this in bash_local
 # chrome(){
 #   /mnt/c/Users/nimu/AppData/Local/Google/Chrome/Application/chrome.exe "$(wslpath -w $(pwd)/$1)"
@@ -139,4 +142,13 @@ bind "set menu-complete-display-prefix on"
 
 # chropen(){
 #   /mnt/c/Users/nimu/AppData/Local/Google/Chrome/Application/chrome.exe "$1"
+# }
+
+# chrome(){
+#   if [[ -e "$1" ]]
+#   then
+#     /mnt/c/Users/nimu/AppData/Local/Google/Chrome/Application/chrome.exe "$(wslpath -w $(pwd)/$1)"
+#   else 
+#     /mnt/c/Users/nimu/AppData/Local/Google/Chrome/Application/chrome.exe "$1"
+#   fi
 # }
