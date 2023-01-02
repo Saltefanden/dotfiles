@@ -132,7 +132,7 @@ bind "set show-all-if-ambiguous on"
 bind "set completion-ignore-case On"
 bind "set menu-complete-display-prefix on"
 
-mkd(){
+mkcd(){
   mkdir "$1" && cd "$1"
 }
 ## Put this in bash_local
