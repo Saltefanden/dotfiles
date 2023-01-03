@@ -152,3 +152,6 @@ mkcd(){
 #     /mnt/c/Users/nimu/AppData/Local/Google/Chrome/Application/chrome.exe "$1"
 #   fi
 # }
+
+EDITOR=vim;
+VISUAL=vim;
