@@ -65,6 +65,7 @@
                     "zero": 1
                 }
             },
+            "intenseTextStyle": "all",
             "scrollbarState": "hidden"
         },
         "list": 
@@ -95,7 +96,7 @@
                 },
                 "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
                 "hidden": false,
-                "intenseTextStyle": "bright",
+                "intenseTextStyle": "all",
                 "name": "Debian",
                 "source": "Windows.Terminal.Wsl",
                 "startingDirectory": "\\\\wsl$\\Debian\\home\\debian"
