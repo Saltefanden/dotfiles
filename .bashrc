@@ -163,6 +163,7 @@ VISUAL=vim;
 
 writeheader() {
   clear
+  echo -ne "\e[01m" # make bold
   case "$1" in
   -b|--blue)
     shift
