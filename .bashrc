@@ -160,3 +160,42 @@ mkcd(){
 
 EDITOR=vim;
 VISUAL=vim;
+
+writeheader() {
+  clear
+  case "$1" in
+  -b|--blue)
+    shift
+    echo -ne "\e[34m" ;;
+  -r|--red)
+    shift
+    echo -ne "\e[31m" ;;
+  -g|--green)
+    shift
+    echo -ne "\e[32m" ;;
+  -y|--yellow)
+    shift
+    echo -ne "\e[33m" ;;
+  -k|--black)
+    shift
+    echo -ne "\e[30m" ;;
+  -m|--magenta)
+    shift
+    echo -ne "\e[35m" ;;
+  -c|--cyan)
+    shift
+    echo -ne "\e[36m" ;;
+  -l|--grey)
+    shift
+    echo -ne "\e[90m" ;;
+  -w|--white)
+    shift
+    echo -ne "\e[97m" ;;
+  -f|--flash)
+    shift
+    echo -ne "\e[05;36m" ;;
+  esac
+
+  figlet -ctf big $* 
+  echo -en "\e[00m"
+}
