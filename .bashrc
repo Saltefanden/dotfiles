@@ -200,3 +200,5 @@ writeheader() {
   figlet -ctf big $* 
   echo -en "\e[00m"
 }
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
