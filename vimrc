@@ -69,7 +69,7 @@ set incsearch
 set backspace=indent,eol,start  " more powerful backspacing
 
 " Run semantic highlighting upon entering buffer or writing
-au BufEnter,BufWritePost * if &ft!='text' && &ft!='help' | execute 'SemanticHighlight' | endif
+" au BufEnter,BufWritePost * if &ft!='text' && &ft!='help' | execute 'SemanticHighlight' | endif
 
 " Set tabstop 2, shiftwidth 2, expandtabs, softtabstop
 set ts=2 sw=2 et sts=2
