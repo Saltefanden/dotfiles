@@ -41,6 +41,9 @@ filetype plugin indent on    " required
 " make it go really fast?
 set ttimeoutlen=5
 
+" Stops waiting for annoying bell?
+set bo=esc
+
 set nu rnu
 syntax on
 
