@@ -38,6 +38,8 @@ call vundle#end()            " required
 
 filetype plugin indent on    " required
 
+" make it go really fast?
+set ttimeoutlen=5
 
 set nu rnu
 syntax on
