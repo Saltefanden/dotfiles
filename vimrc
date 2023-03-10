@@ -13,6 +13,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Everblush/everblush.vim'
 Plugin 'tpope/vim-commentary'
+Plugin 'sainnhe/gruvbox-material'
 Plugin 'preservim/nerdtree'
 Plugin 'jaxbot/semantic-highlight.vim'
 Plugin 'vim-airline/vim-airline'
@@ -51,10 +52,30 @@ nnoremap <Left> <NOP>
 nnoremap <Right> <NOP>
 nnoremap Q <nop>
 
+
+set termguicolors
+set colorcolumn=80
+
 let g:everblushNR=1
+let g:everblush_transp_bg=1
 colo everblush
 let g:airline_theme='minimalist'
+
+" set background=dark
+" let g:gruvbox_material_background = 'medium'
+" let g:gruvbox_material_foreground = 'mix'
+" let g:gruvbox_material_transparent_bg = 0
+" let g:gruvbox_material_better_performance = 1
+" let g:gruvbox_material_disable_italic_comment = 1
+" colorscheme gruvbox-material
+" let g:airline_theme = 'gruvbox_material'
+
 let g:airline#extensions#branch#enabled=1
+
+" Set background transparent?
+" autocmd VimEnter * hi! Normal guibg=NONE ctermbg=NONE
+" hi! NonText ctermbg=NONE guibg=NONE
+
 " Start NERDTree and put the cursor back in the other window.
 " autocmd VimEnter * NERDTree | wincmd p
 
@@ -81,9 +102,6 @@ let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " au FileType c,cpp,objc,objcpp,py call rainbow#load()
 let g:rainbow_active = 1
-
-" Set background transparent?
-hi Normal guibg=NONE ctermbg=NONE
 
 " May need for vim (not neovim) since coc.nvim calculate byte offset by count
 " utf-8 byte sequence.
