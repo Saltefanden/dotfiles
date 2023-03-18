@@ -78,8 +78,8 @@ let g:airline_theme='minimalist'
 let g:airline#extensions#branch#enabled=1
 
 " Set background transparent?
-" autocmd VimEnter * hi! Normal guibg=NONE ctermbg=NONE
-" hi! NonText ctermbg=NONE guibg=NONE
+autocmd VimEnter * hi! Normal guibg=NONE ctermbg=NONE
+hi! NonText ctermbg=NONE guibg=NONE
 
 " Start NERDTree and put the cursor back in the other window.
 " autocmd VimEnter * NERDTree | wincmd p
