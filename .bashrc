@@ -61,7 +61,7 @@ if [ "$color_prompt" = yes ]; then
     # PS1='${debian_chroot:+($debian_chroot)}\[\033[00;32m\]\u@\h\[\033[00m\]:\[\033[00;34m\]\w\[\033[00m\]\$ '
     # https://www.reddit.com/r/linux/comments/2uf5uu/this_is_my_bash_prompt_which_is_your_favorite/
 # \e[05;32m $hjerte \e[00m
-    PS1="\e[05;31m[\e[00m\e[02;37m\u \A\e[00m\e[05;31m]\e[00m \e[02;36m\w/\e[00m\$ "
+    PS1="\[\e[01;31m\][\[\e[00m\]\[\e[02;37m\]\u \A\[\e[00m\]\[\e[01;31m\]]\[\e[00m\] \[\e[02;36m\]\w/\[\e[00m\]\$ "
 # PS1="\[\e]0;\u@\h \w\a\]${debian_chroot:+($debian_chroot)}[\[\033[02;36;40m\]\u \A \#\[\033[00m\]] \[\033[03;34m\]\w/ \[\033[00m\]\$ "
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
