@@ -77,6 +77,10 @@ let g:airline_theme='minimalist'
 
 let g:airline#extensions#branch#enabled=1
 
+set conceallevel=0
+let g:tex_conceal=''
+let g:vim_json_conceal=''
+
 " Set background transparent?
 autocmd VimEnter * hi! Normal guibg=NONE ctermbg=NONE
 hi! NonText ctermbg=NONE guibg=NONE
