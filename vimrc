@@ -40,7 +40,7 @@ filetype plugin indent on    " required
 " make it go really fast?
 set ttimeoutlen=5
 
-" Stops waiting for annoying bell?
+" Stops waiting for annoying bell? option: belloff check by :se
 set bo=esc
 
 set nu rnu
@@ -94,8 +94,13 @@ hi! NonText ctermbg=NONE guibg=NONE
 set hlsearch
 set incsearch
 
+" Defaults.vim
 " Backspacing better
 set backspace=indent,eol,start  " more powerful backspacing
+" tabmenu for commands
+set wildmenu
+"Scrollspace
+set scrolloff=3
 
 " Run semantic highlighting upon entering buffer or writing
 " au BufEnter,BufWritePost * if &ft!='text' && &ft!='help' | execute 'SemanticHighlight' | endif
