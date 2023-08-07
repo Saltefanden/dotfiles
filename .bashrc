@@ -203,4 +203,4 @@ writeheader() {
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-[[ -z "$TMUX" ]] && { tmux new -s 0; }
+[[ -z "$TMUX" ]] && { tmux new; }
