@@ -8,8 +8,8 @@
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
-    if [ -f "$HOME/.bash/bashrc" ]; then
-	. "$HOME/.bash/bashrc"
+    if [ -f "$HOME/.bashrc" ]; then
+	. "$HOME/.bashrc"
     fi
 fi
 
