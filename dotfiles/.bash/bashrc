@@ -96,7 +96,7 @@ fi
 #alias ll='ls -l'
 alias la='ls -lA'
 #alias l='ls -CF'
-
+alias tmux='tmux -f $HOME/.config/tmux/tmux.conf' 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -202,4 +202,4 @@ writeheader() {
 }
 
 
-[[ -z "$TMUX" ]] && { tmux -f $HOME/.config/tmux/tmux.conf new; }
+[[ -z "$TMUX" ]] && { tmux new; }
