@@ -201,6 +201,5 @@ writeheader() {
   echo -en "\e[00m"
 }
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-[[ -z "$TMUX" ]] && { tmux new; }
+[[ -z "$TMUX" ]] && { tmux -f $HOME/.config/tmux/tmux.conf new; }
