@@ -1,0 +1,12 @@
+source $VIMRUNTIME/defaults.vim
+set nu rnu
+set scrolloff=3
+set colorcolumn=79
+syntax enable
+set termguicolors
+let g:codedark_modern=1
+let g:codedark_italics=1
+let g:codedark_transparent=1
+colo codedark
+
+let g:netrw_home=$HOME
