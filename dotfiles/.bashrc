@@ -201,5 +201,25 @@ writeheader() {
   echo -en "\e[00m"
 }
 
+export -f writeheader
+
+# Put this is bash_local?
+#explorer.exe(){
+#	for var in "$@"
+#	do
+#	/mnt/c/Windows/explorer.exe "$(wslpath -w "$var")"
+#	done
+#}
+#
+#export -f explorer.exe
+#
+#clip.exe(){
+#	iconv -f UTF-8 -t IBM850 | /mnt/c/Windows/system32/clip.exe
+#}
+#
+#export -f clip.exe
+
+
+
 
 [[ -z "$TMUX" ]] && { tmux new; }
