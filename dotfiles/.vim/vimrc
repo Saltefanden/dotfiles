@@ -1,12 +1,29 @@
 source $VIMRUNTIME/defaults.vim
+" Regular vim functionaliy
 set nu rnu
 set scrolloff=3
 set colorcolumn=79
-syntax enable
+set ignorecase
+set hlsearch
+set showmatch
+set matchtime=1
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+" Colors and highlighting
 set termguicolors
 let g:codedark_modern=1
 let g:codedark_italics=1
 let g:codedark_transparent=1
 colo codedark
 
+" Set netrw home to the home folder rather than the .vim folder
 let g:netrw_home=$HOME
+
+"" As per 
+"" https://www.youtube.com/watch?v=XA2WjJbmmoM&list=PL8tzorAO7s0jy7DQ3Q0FwF3BnXGQnDirs
+"" Enables fuzzy finding of subdirectories???
+"" The appended number, <N>, in **<N> determines the search depth
+set path+=**3
+
