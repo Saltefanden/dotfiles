@@ -1,4 +1,6 @@
+" defaults
 source $VIMRUNTIME/defaults.vim
+
 " Regular vim functionaliy
 set nu rnu
 set scrolloff=3
@@ -10,11 +12,12 @@ set matchtime=1
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+set laststatus=2
 
 " Colors and highlighting
 set termguicolors
 let g:codedark_modern=1
-let g:codedark_italics=1
+let g:codedark_italics=0
 let g:codedark_transparent=1
 colo codedark
 
@@ -27,3 +30,5 @@ let g:netrw_home=$HOME
 "" The appended number, <N>, in **<N> determines the search depth
 set path+=**3
 
+
+autocmd FileType json syntax match Comment +\/\/.\+$+

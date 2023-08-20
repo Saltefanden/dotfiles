@@ -133,9 +133,6 @@ fi
 # fi
 
 bind 'TAB:menu-complete'
-bind "set show-all-if-ambiguous on"
-bind "set completion-ignore-case On"
-bind "set menu-complete-display-prefix on"
 
 mkcd(){
   mkdir "$1" && cd "$1"
