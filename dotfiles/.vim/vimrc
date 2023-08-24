@@ -1,5 +1,9 @@
+" Packages?
+packadd! matchit
+
 " defaults
 source $VIMRUNTIME/defaults.vim
+set mouse&
 
 " Regular vim functionaliy
 set nu rnu
@@ -30,5 +34,8 @@ let g:netrw_home=$HOME
 "" The appended number, <N>, in **<N> determines the search depth
 set path+=**3
 
-
-autocmd FileType json syntax match Comment +\/\/.\+$+
+" Use CTRL-L to clear the highlighting of 'hlsearch' (off by default) and call
+" :diffupdate.
+if maparg('<C-L>', 'n') ==# ''
+  nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
+endif
