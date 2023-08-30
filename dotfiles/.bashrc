@@ -219,6 +219,18 @@ export -f writeheader
 #
 #export -f clip.exe
 
+#chrome(){
+#  for var in "$@"
+#  do 
+#      if [[ -e "$var" ]]
+#      then
+#        "/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe" "$(wslpath -w $(pwd)/$var)"
+#      else 
+#        "/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe" "$var"
+#      fi
+#  done
+#}
+
 
 
 
