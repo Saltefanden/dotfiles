@@ -105,6 +105,8 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
+alias cal='ncal -b' 
+
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
