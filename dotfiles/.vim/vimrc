@@ -17,7 +17,7 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 set laststatus=2
-
+set statusline=%<%f%h%m%r\ %{FugitiveStatusline()}%=%b\ 0x%B\ \ %l,%c%V\ %P
 " Colors and highlighting
 set termguicolors
 let g:codedark_modern=1
