@@ -56,6 +56,9 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+source ~/.git-prompt.sh
+source ~/.git-completion.bash
+
 PROMPT_DIRTRIM=1
 if [ "$color_prompt" = yes ]; then
     # PS1='${debian_chroot:+($debian_chroot)}\[\033[00;32m\]\u@\h\[\033[00m\]:\[\033[00;34m\]\w\[\033[00m\]\$ '
@@ -68,14 +71,27 @@ else
 fi
 unset color_prompt force_color_prompt
 
-# If this is an xterm set the title to user@host:dir
-case "$TERM" in
-xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-    ;;
-*)
-    ;;
-esac
+build_prompt(){
+    PS1="\[\e[01;31m\][\[\e[00m\]\[\e[02;37m\]\u \A\[\e[00m\]\[\e[01;31m\]]\[\e[00m\] \[\e[02;36m\]\w\[\e[00m\]"
+    export GIT_PS1_SHOWDIRTYSTATE=1
+    git_info=$(__git_ps1 " (%s)")
+    if [[ $git_info ]]; then
+        PS1+="$git_info "
+    else
+        PS1+=" "
+    fi
+    PS1+="\$ "
+}
+PROMPT_COMMAND=build_prompt
+# PROMPT_COMMAND='__git_ps1'
+# # If this is an xterm set the title to user@host:dir
+# case "$TERM" in
+# xterm*|rxvt*)
+#     PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+#     ;;
+# *)
+#     ;;
+# esac
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
