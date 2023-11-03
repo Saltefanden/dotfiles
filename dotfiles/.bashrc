@@ -80,6 +80,9 @@ build_prompt(){
     else
         PS1+=" "
     fi
+    if [[ $VIRTUAL_ENV_PROMPT ]]; then
+        PS1+="$VIRTUAL_ENV_PROMPT"
+    fi
     PS1+="\$ "
 }
 PROMPT_COMMAND=build_prompt
