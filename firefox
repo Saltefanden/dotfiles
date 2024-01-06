@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+for var in "$@"
+do 
+    if [[ -e "$var" ]]
+    then
+      '/mnt/c/Program Files/Mozilla Firefox/firefox.exe' "$(wslpath -w $(pwd)/$var)"
+    else 
+      '/mnt/c/Program Files/Mozilla Firefox/firefox.exe' "$var"
+    fi
+done
