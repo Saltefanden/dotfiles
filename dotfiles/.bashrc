@@ -179,8 +179,9 @@ mkcd(){
 #   fi
 # }
 
-EDITOR=vim;
-VISUAL=vim;
+export EDITOR=vim;
+export VISUAL=vim;
+export BROWSER=firefox;
 
 writeheader() {
   clear
