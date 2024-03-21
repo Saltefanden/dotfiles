@@ -254,6 +254,7 @@ export -f writeheader
 #}
 
 
+export GPG_TTY=$(tty)
 
 
 [[ -z "$TMUX" ]] && { tmux new; }
