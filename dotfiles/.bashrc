@@ -82,6 +82,9 @@ build_prompt(){
     fi
     if [[ $VIRTUAL_ENV_PROMPT ]]; then
         PS1+="$VIRTUAL_ENV_PROMPT"
+    elif [[ $VIRTUAL_ENV ]]; then
+        # Should not be proud of this...
+        PS1="${PS1:-}(`basename $VIRTUAL_ENV`) "
     fi
     PS1+="\$ "
 }
@@ -125,6 +128,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 alias cal='ncal -b' 
+alias jup='jupyter-notebook'
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
