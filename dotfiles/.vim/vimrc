@@ -8,7 +8,8 @@ set mouse&
 " Regular vim functionaliy
 set nu rnu
 set scrolloff=3
-set colorcolumn=79
+set colorcolumn=80
+set cursorline
 set ignorecase
 set hlsearch
 set showmatch
