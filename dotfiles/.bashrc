@@ -187,47 +187,6 @@ export EDITOR=vim;
 export VISUAL=vim;
 export BROWSER=firefox;
 
-writeheader() {
-  clear
-  echo -ne "\e[01m" # make bold
-  case "$1" in
-  -b|--blue)
-    shift
-    echo -ne "\e[34m" ;;
-  -r|--red)
-    shift
-    echo -ne "\e[31m" ;;
-  -g|--green)
-    shift
-    echo -ne "\e[32m" ;;
-  -y|--yellow)
-    shift
-    echo -ne "\e[33m" ;;
-  -k|--black)
-    shift
-    echo -ne "\e[30m" ;;
-  -m|--magenta)
-    shift
-    echo -ne "\e[35m" ;;
-  -c|--cyan)
-    shift
-    echo -ne "\e[36m" ;;
-  -l|--grey)
-    shift
-    echo -ne "\e[90m" ;;
-  -w|--white)
-    shift
-    echo -ne "\e[97m" ;;
-  -f|--flash)
-    shift
-    echo -ne "\e[05;36m" ;;
-  esac
-
-  figlet -ctf big $* 
-  echo -en "\e[00m"
-}
-
-export -f writeheader
 
 # Put this is bash_local?
 #explorer.exe(){
@@ -260,5 +219,4 @@ export -f writeheader
 
 export GPG_TTY=$(tty)
 
-
-[[ -z "$TMUX" ]] && { tmux new; }
+[[ -z "$TMUX" ]] && { tmux new; exit; } 
