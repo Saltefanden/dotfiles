@@ -1,0 +1,5 @@
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias less='less -Q'
+alias man='man -P "less -Q"'
+alias la='ls -la'

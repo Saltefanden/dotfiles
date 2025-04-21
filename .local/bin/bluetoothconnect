@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+bluetoothctl connect 80:C3:BA:48:D4:25
+pkill -RTMIN+1 dwmblocks

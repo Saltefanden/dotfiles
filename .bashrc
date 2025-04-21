@@ -219,4 +219,4 @@ export BROWSER=firefox;
 
 export GPG_TTY=$(tty)
 
-[[ -z "$TMUX" ]] && { tmux new; exit; } 
+# [[ -z "$TMUX" ]] && { tmux new; exit; } 
