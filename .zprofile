@@ -22,6 +22,7 @@ export INPUTRC="$XDG_CONFIG_HOME/readline/inputrc"
 #export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 
 export PYTHON_BASIC_REPL="True"   # Set to whatever, I just dont like the new REPL in python 3.13
+export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonrc.py"
 
 # Ensure path array only contains unique entries
 typeset -U path

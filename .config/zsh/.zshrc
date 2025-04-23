@@ -32,6 +32,7 @@ SAVEHIST=10000
 autoload -Uz compinit; compinit
 zstyle ':completion:*' menu select rehash true
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} ma=0\;33 # colorize cmp menu
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zmodload zsh/complist
 _comp_options+=(globdots)		# Include hidden files.
 
@@ -93,4 +94,7 @@ bindkey -M visual '^[[P' vi-delete
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+
+
+[[ $(uname) == "Darwin" ]] && source_if_exists "$XDG_CONFIG_HOME/zsh/.zsh_local"
 
