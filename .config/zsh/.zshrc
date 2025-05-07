@@ -96,5 +96,5 @@ bindkey -M visual '^[[P' vi-delete
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
 
-[[ $(uname) == "Darwin" ]] && source_if_exists "$XDG_CONFIG_HOME/zsh/.zsh_local"
+[[ $(uname) == "Darwin" ]] && source_if_exists "$XDG_CONFIG_HOME/zsh/.zsh_local" || true
 
