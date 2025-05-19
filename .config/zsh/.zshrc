@@ -7,6 +7,13 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+source_if_exists() {
+    [[ -e "$1" ]] && source "$1"
+}
+
+# This needs to happen before we autoload compinit
+[[ $(uname) == "Darwin" ]] && source_if_exists "$XDG_CONFIG_HOME/zsh/.zsh_local"
+
 # Enable colors and change prompt:
 autoload -U colors; colors	# Load colors
 # PS1="%B%{$fg[red]%}[%{$fg[gray]%}%n@%m%{$fg[red]%}] %{$fg[cyan]%}%~%  %{$reset_color%}%(!.#.$) "
@@ -65,10 +72,6 @@ echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 
-source_if_exists() {
-    [[ -e "$1" ]] && source "$1"
-}
-
 # Add shell aliases
 source_if_exists "$XDG_CONFIG_HOME/shell/.shell_alias"
 
@@ -79,7 +82,10 @@ source_if_exists "$XDG_CONFIG_HOME/zsh/plugins/fzf/fzf.zsh"
 source_if_exists "$XDG_CONFIG_HOME/zsh/plugins/fzf-git/fzf-git.sh"
 
 # Add helper functions
-source_if_exists  "$XDG_CONFIG_HOME/zsh/plugins/helper_functions/mkcd"
+# source_if_exists  "$XDG_CONFIG_HOME/zsh/plugins/helper_functions/mkcd"
+for file in "$XDG_CONFIG_HOME"/zsh/plugins/helper_functions/*; do
+    source_if_exists $file
+done
 
 # Edit line in vim with ctrl-e:
 
@@ -89,12 +95,10 @@ bindkey -M vicmd '^[[P' vi-delete-char
 bindkey -M vicmd '^e' edit-command-line
 bindkey -M visual '^[[P' vi-delete
 
-(cat ~/.cache/wal/sequences &)
+[[ -e ~/.cache/wal/sequences ]] && (cat ~/.cache/wal/sequences &)
 
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
-
-[[ $(uname) == "Darwin" ]] && source_if_exists "$XDG_CONFIG_HOME/zsh/.zsh_local"
 
