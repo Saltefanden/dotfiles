@@ -1,0 +1,4 @@
+*.zsh_local
+*.zcompdump
+.zcompdump
+.config/zsh/plugins/helper_functions/
