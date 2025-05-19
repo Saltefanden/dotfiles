@@ -3,6 +3,7 @@ packadd! matchit
 
 " defaults
 source $VIMRUNTIME/defaults.vim
+syntax on
 set mouse&
 
 " Regular vim functionaliy
