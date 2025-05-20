@@ -30,7 +30,7 @@ inner.vertical      = 6
 outer.left          = [{ monitor."PHL 346B1C" = 500 }, 3]
 outer.bottom        = 3
 #outer.top           = 6
-outer.top = [{ monitor."PHL 346B1C" = 24 }, 0]
+outer.top = [{ monitor."PHL 346B1C" = 28 }, 0]
 outer.right         = [{ monitor."PHL 346B1C" = 500 }, 3]
 
 [key-mapping]
