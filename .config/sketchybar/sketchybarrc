@@ -13,7 +13,7 @@ PLUGIN_DIR="$CONFIG_DIR/plugins"
 # If you are looking for other colors, see the color picker:
 # https://felixkratz.github.io/SketchyBar/config/tricks#color-picker
 
-sketchybar --bar position=top height=24 blur_radius=30 color=0x40000000
+sketchybar --bar position=top height=24 blur_radius=0 color=0x40000000 padding_left=4 sticky=on
 
 ##### Changing Defaults #####
 # We now change some default values, which are applied to all further items.
@@ -60,7 +60,7 @@ sketchybar --default "${default[@]}"
 #done
 sketchybar --add event aerospace_workspace_change
 
-for sid in $(aerospace list-workspaces --all); do
+for sid in $(seq 9); do #$(aerospace list-workspaces --all); do
     sketchybar --add item space.$sid left \
         --subscribe space.$sid aerospace_workspace_change \
         --set space.$sid \
