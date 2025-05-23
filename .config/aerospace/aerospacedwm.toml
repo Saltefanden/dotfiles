@@ -6,7 +6,7 @@ after-startup-command = [
     'exec-and-forget borders active_color=0xffd4a3ff inactive_color=0xff494d64 width=5.0']
 exec-on-workspace-change = ['/bin/bash', '-c',
   'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE',
-  #'exec-and-forget borders active_color=0xff023b16 inactive_color=0xff494d64 width=5.0'
+  'exec-and-forget borders active_color=0xffffffff inactive_color=0xff494d64 width=5.0'
 ]
 
 
@@ -30,7 +30,7 @@ inner.vertical      = 6
 outer.left          = [{ monitor."PHL 346B1C" = 500 }, 3]
 outer.bottom        = 3
 #outer.top           = 6
-outer.top = [{ monitor."PHL 346B1C" = 28 }, 0]
+outer.top = [{ monitor."PHL 346B1C" = 30 }, { monitor."DELL P2419H" = 28 }, 3]
 outer.right         = [{ monitor."PHL 346B1C" = 500 }, 3]
 
 [key-mapping]
@@ -45,6 +45,7 @@ alt-tab = 'workspace-back-and-forth'
 cmd-m = 'fullscreen'
 cmd-a = 'layout accordion horizontal'
 cmd-shift-enter = 'exec-and-forget open -n /Applications/Alacritty.app'
+cmd-alt-ctrl-f = 'exec-and-forget open -n /Applications/Firefox.app'
 
 # Basic window operations (dwm-style)
 cmd-shift-c = 'close'                      # Close window (dwm default)
@@ -104,62 +105,74 @@ cmd-shift-k = ['join-with up', 'mode main']
 cmd-shift-l = ['join-with right', 'mode main']
 
 # Window assignment rules remain unchanged
-[[on-window-detected]]
-if.app-id = 'com.apple.Terminal'
-run = ['move-node-to-workspace 1']
-
-[[on-window-detected]]
-if.app-id = 'com.googlecode.iterm2'
-run = ['move-node-to-workspace 1']
-
-[[on-window-detected]]
-if.app-id = 'com.github.wez.wezterm'
-run = ['move-node-to-workspace 1']
-
-[[on-window-detected]]
-if.app-id = 'com.google.Chrome'
-run = ['move-node-to-workspace 2']
+# [[on-window-detected]]
+# if.app-id = 'com.apple.Terminal'
+# run = ['move-node-to-workspace 1']
+# 
+# [[on-window-detected]]
+# if.app-id = 'com.googlecode.iterm2'
+# run = ['move-node-to-workspace 1']
+# 
+# [[on-window-detected]]
+# if.app-id = 'com.github.wez.wezterm'
+# run = ['move-node-to-workspace 1']
+# 
+# [[on-window-detected]]
+# if.app-id = 'com.google.Chrome'
+# run = ['move-node-to-workspace 2']
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode'
 run = ['move-node-to-workspace 3']
 
-[[on-window-detected]]
-if.app-id = 'com.jetbrains.intellij.ce'
-run = ['move-node-to-workspace 3']
-
-[[on-window-detected]]
-if.app-id = 'com.hnc.Discord'
-run = ['move-node-to-workspace 4']
-
-[[on-window-detected]]
-if.app-id = 'com.apple.MobileSMS'
-run = ['move-node-to-workspace 4']
-
-[[on-window-detected]]
-if.app-id = 'org.whispersystems.signal-desktop'
-run = ['move-node-to-workspace 4']
-
-[[on-window-detected]]
-if.app-id = 'com.tinyspeck.slackmacgap'
-run = ['move-node-to-workspace 4']
-
-[[on-window-detected]]
-if.app-id = 'md.obsidian'
-run = ['move-node-to-workspace 5']
-
-[[on-window-detected]]
-if.app-id = 'com.apple.Preview'  # For PDFs
-run = ['move-node-to-workspace 5']
+#[[on-window-detected]]
+#if.app-id = 'com.jetbrains.intellij.ce'
+#run = ['move-node-to-workspace 3']
+#
+#[[on-window-detected]]
+#if.app-id = 'com.hnc.Discord'
+#run = ['move-node-to-workspace 4']
+#
+#[[on-window-detected]]
+#if.app-id = 'com.apple.MobileSMS'
+#run = ['move-node-to-workspace 4']
+#
+#[[on-window-detected]]
+#if.app-id = 'org.whispersystems.signal-desktop'
+#run = ['move-node-to-workspace 4']
+#
+#[[on-window-detected]]
+#if.app-id = 'com.tinyspeck.slackmacgap'
+#run = ['move-node-to-workspace 4']
+#
+#[[on-window-detected]]
+#if.app-id = 'md.obsidian'
+#run = ['move-node-to-workspace 5']
+#
+#[[on-window-detected]]
+#if.app-id = 'com.apple.Preview'  # For PDFs
+#run = ['move-node-to-workspace 5']
 
 [[on-window-detected]]
 if.app-id = 'com.linear'
-run = ['move-node-to-workspace 6']
+run = ['move-node-to-workspace 7']
 
 [[on-window-detected]]
-if.app-id = 'com.toggl.toggldesktop'  # Time tracking
-run = ['move-node-to-workspace 6']
+if.app-id = 'notion.id'
+run = ['move-node-to-workspace 8']
 
 [[on-window-detected]]
-if.app-id = 'com.jetbrains.datagrip'
-run = ['move-node-to-workspace 6']
+if.app-id = 'com.cron.electron'
+run = ['move-node-to-workspace 8']
+
+[[on-window-detected]]
+if.app-id = 'com.tinyspeck.slackmacgap'
+run = ['move-node-to-workspace 9']
+
+#[[on-window-detected]]
+#if.app-id = 'com.toggl.toggldesktop'  # Time tracking
+#run = ['move-node-to-workspace 6']
+#
+#[[on-window-detected]]
+#if.app-id = 'com.jetbrains.datagrip'
+#run = ['move-node-to-workspace 6']
