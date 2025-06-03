@@ -14,7 +14,7 @@ source_if_exists() {
 # This needs to happen before we autoload compinit
 [[ $(uname) == "Darwin" ]] && source_if_exists "$XDG_CONFIG_HOME/zsh/.zsh_local"
 
-[[ -d "$XDG_CONFIG_HOME/zsh/plugins/poetry" ]] && fpath+="$XDG_CONFIG_HOME/zsh/plugins/poetry"
+[[ -d "$XDG_CONFIG_HOME/zsh/plugins/completions" ]] && fpath+="$XDG_CONFIG_HOME/zsh/plugins/completions"
 # Enable colors and change prompt:
 autoload -U colors; colors	# Load colors
 # PS1="%B%{$fg[red]%}[%{$fg[gray]%}%n@%m%{$fg[red]%}] %{$fg[cyan]%}%~%  %{$reset_color%}%(!.#.$) "
