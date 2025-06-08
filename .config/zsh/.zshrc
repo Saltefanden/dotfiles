@@ -96,7 +96,7 @@ bindkey -M vicmd '^[[P' vi-delete-char
 bindkey -M vicmd '^e' edit-command-line
 bindkey -M visual '^[[P' vi-delete
 
-[[ -e ~/.cache/wal/sequences ]] && (cat ~/.cache/wal/sequences &)
+[[ -e ~/.cache/wal/sequences && -z ${+VSCODE_INJECTION} ]] && (cat ~/.cache/wal/sequences &)
 
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
