@@ -3,12 +3,6 @@ if not __doc__ == 'Automatically created module for IPython interactive environm
     import sys
 
 
-    from prompt_toolkit.filters import ViInsertMode
-    from prompt_toolkit.key_binding.key_processor import KeyPress
-    from prompt_toolkit.keys import Keys
-    from prompt_toolkit.styles import Style
-
-
     def configure(repl):
         """
         Configuration method. This is called during the start-up of ptpython.
@@ -194,6 +188,11 @@ if not __doc__ == 'Automatically created module for IPython interactive environm
     try:
         from ptpython.repl import embed
         from ptpython.layout import CompletionVisualisation
+        from prompt_toolkit.filters import ViInsertMode
+        from prompt_toolkit.key_binding.key_processor import KeyPress
+        from prompt_toolkit.keys import Keys
+        from prompt_toolkit.styles import Style
+
     except ImportError:
         print("ptpython is not available: falling back to standard prompt")
     else:
