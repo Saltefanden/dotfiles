@@ -90,7 +90,7 @@ for sid in $(seq 9); do #$(aerospace list-workspaces --all); do
     sketchybar --add item space.$sid left \
         --subscribe space.$sid aerospace_workspace_change \
         --set space.$sid \
-        background.color=0xA0E52704 \
+        background.color=0xFFE52704 \
         background.corner_radius=5 \
         background.height=30 \
         background.drawing=off \
