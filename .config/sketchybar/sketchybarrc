@@ -12,18 +12,19 @@ PLUGIN_DIR="$CONFIG_DIR/plugins"
 # https://felixkratz.github.io/SketchyBar/config/bar
 # If you are looking for other colors, see the color picker:
 # https://felixkratz.github.io/SketchyBar/config/tricks#color-picker
-if [[ $(aerospace list-monitors | head -1 | cut -c 5-) = "DELL P2419H" ]]; then
-    bar=(
-        position=top 
-        height=26
-        blur_radius=0 
-        #color=0x40000000 
-        color=0xd0222222
-        padding_left=4 
-        sticky=on
-        font_smoothing=on
-    )
-else
+
+#if [[ $(aerospace list-monitors | head -1 | cut -c 5-) = "DELL P2419H" ]]; then
+#    bar=(
+#        position=top 
+#        height=26
+#        blur_radius=0 
+#        #color=0x40000000 
+#        color=0xd0222222
+#        padding_left=4 
+#        sticky=on
+#        font_smoothing=on
+#    )
+#else
     bar=(
         position=top 
         height=35
@@ -34,7 +35,7 @@ else
         sticky=on
         font_smoothing=on
     )
-fi;
+#fi;
 
 sketchybar --bar "${bar[@]}"
 
