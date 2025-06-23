@@ -30,7 +30,8 @@ inner.vertical      = 6
 outer.left          = [{ monitor."PHL 346B1C" = 500 }, 3]
 outer.bottom        = 3
 #outer.top           = 6
-outer.top = [{ monitor."PHL 346B1C" = 37 }, { monitor."DELL P2419H" = 28 }, 5]
+#outer.top = [{ monitor."PHL 346B1C" = 37 }, { monitor."DELL P2419H" = 28 }, 5]
+outer.top = [{ monitor."PHL 346B1C" = 37 }, { monitor."DELL P2419H" = 37 }, 5]
 outer.right         = [{ monitor."PHL 346B1C" = 500 }, 3]
 
 [key-mapping]
