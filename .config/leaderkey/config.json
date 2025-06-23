@@ -1,0 +1,99 @@
+{
+  "actions" : [
+    {
+      "key" : "b",
+      "type" : "application",
+      "value" : "/Applications/Firefox.app"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "p",
+          "type" : "application",
+          "value" : "/Applications/Pritunl.app"
+        },
+        {
+          "key" : "n",
+          "type" : "application",
+          "value" : "/Applications/Notion.app"
+        },
+        {
+          "key" : "l",
+          "type" : "application",
+          "value" : "/Applications/Linear.app"
+        },
+        {
+          "key" : "s",
+          "type" : "application",
+          "value" : "/Applications/Slack.app"
+        },
+        {
+          "key" : "1",
+          "type" : "application",
+          "value" : "/Applications/1Password.app"
+        },
+        {
+          "key" : "m",
+          "type" : "application",
+          "value" : "/Applications/Notion Calendar.app"
+        },
+        {
+          "key" : "c",
+          "type" : "application",
+          "value" : "/Applications/Visual Studio Code.app"
+        }
+      ],
+      "key" : "a",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "o",
+          "type" : "url",
+          "value" : "https://ageras.okta.com/app/UserHome"
+        },
+        {
+          "key" : "c",
+          "type" : "url",
+          "value" : "https://chatgpt.com/"
+        },
+        {
+          "key" : "e",
+          "type" : "url",
+          "value" : "https://mail.google.com/mail/u/1/#inbox"
+        },
+        {
+          "key" : "g",
+          "type" : "url",
+          "value" : "https://github.com/"
+        }
+      ],
+      "key" : "f",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "e",
+          "type" : "command",
+          "value" : "zsh -c \"printenv\"; read;"
+        }
+      ],
+      "key" : "c",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "c",
+          "type" : "command",
+          "value" : "/usr/local/bin/code -n"
+        }
+      ],
+      "key" : "n",
+      "type" : "group"
+    }
+  ],
+  "type" : "group"
+}
