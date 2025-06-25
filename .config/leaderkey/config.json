@@ -1,11 +1,6 @@
 {
   "actions" : [
     {
-      "key" : "b",
-      "type" : "application",
-      "value" : "/Applications/Firefox.app"
-    },
-    {
       "actions" : [
         {
           "key" : "p",
@@ -41,6 +36,11 @@
           "key" : "c",
           "type" : "application",
           "value" : "/Applications/Visual Studio Code.app"
+        },
+        {
+          "key" : "f",
+          "type" : "application",
+          "value" : "/Applications/Firefox.app"
         }
       ],
       "key" : "a",
@@ -67,6 +67,16 @@
           "key" : "g",
           "type" : "url",
           "value" : "https://github.com/"
+        },
+        {
+          "key" : "m",
+          "type" : "url",
+          "value" : "https://calendar.google.com/calendar/u/1/r"
+        },
+        {
+          "key" : "y",
+          "type" : "url",
+          "value" : "https://www.youtube.com/"
         }
       ],
       "key" : "f",
@@ -89,6 +99,11 @@
           "key" : "c",
           "type" : "command",
           "value" : "/usr/local/bin/code -n"
+        },
+        {
+          "key" : "f",
+          "type" : "command",
+          "value" : "/usr/local/bin/firefox"
         }
       ],
       "key" : "n",
