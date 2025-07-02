@@ -2,3 +2,5 @@
 *.zcompdump
 .zcompdump
 .config/zsh/plugins/helper_functions/
+*.zcompcache
+.zcompcache
