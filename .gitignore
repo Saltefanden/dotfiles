@@ -1,6 +1,8 @@
 *.zsh_local
 *.zcompdump
+**/.zcompdump
 .zcompdump
 .config/zsh/plugins/helper_functions/
 *.zcompcache
+**/.zcompcache
 .zcompcache
