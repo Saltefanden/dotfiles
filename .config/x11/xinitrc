@@ -12,6 +12,7 @@ fi
 
 # feh --bg-fill -z ~/wallpaper/1728663147694619.png
 # wal -i ~/wallpaper/1728663147694619.png
+setxkbmap -option caps:escape
 wal -R
 exec dwmblocks &
 exec dwm
