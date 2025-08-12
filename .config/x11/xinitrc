@@ -14,5 +14,6 @@ fi
 # wal -i ~/wallpaper/1728663147694619.png
 setxkbmap -option caps:escape
 wal -R
+xset s off
 exec dwmblocks &
 exec dwm
