@@ -77,6 +77,11 @@
           "key" : "y",
           "type" : "url",
           "value" : "https://www.youtube.com/"
+        },
+        {
+          "key" : "u",
+          "type" : "url",
+          "value" : "https://id.eu.cultureamp.com/app/auth"
         }
       ],
       "key" : "f",
@@ -98,7 +103,7 @@
         {
           "key" : "c",
           "type" : "command",
-          "value" : "/usr/local/bin/code -n"
+          "value" : "/bin/zsh -ic \"source ~/.zprofile; /usr/local/bin/code -n\""
         },
         {
           "key" : "f",
