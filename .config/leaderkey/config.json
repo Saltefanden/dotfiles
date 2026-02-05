@@ -41,6 +41,11 @@
           "key" : "f",
           "type" : "application",
           "value" : "/Applications/Firefox.app"
+        },
+        {
+          "key" : "t",
+          "type" : "application",
+          "value" : "/Applications/TablePlus.app"
         }
       ],
       "key" : "a",
@@ -61,7 +66,7 @@
         {
           "key" : "e",
           "type" : "url",
-          "value" : "https://mail.google.com/mail/u/1/#inbox"
+          "value" : "https://mail.google.com/mail/u/0/#inbox"
         },
         {
           "key" : "g",
@@ -71,7 +76,7 @@
         {
           "key" : "m",
           "type" : "url",
-          "value" : "https://calendar.google.com/calendar/u/1/r"
+          "value" : "https://calendar.google.com/calendar/u/0/r"
         },
         {
           "key" : "y",
@@ -82,6 +87,26 @@
           "key" : "u",
           "type" : "url",
           "value" : "https://id.eu.cultureamp.com/app/auth"
+        },
+        {
+          "key" : "i",
+          "type" : "url",
+          "value" : "https://app.circleci.com/projects/project-dashboard/github/billysbilling"
+        },
+        {
+          "key" : "s",
+          "type" : "url",
+          "value" : "https://mit.staging.billy.dk/"
+        },
+        {
+          "key" : "b",
+          "type" : "url",
+          "value" : "https://mit.billy.dk"
+        },
+        {
+          "key" : "l",
+          "type" : "url",
+          "value" : "https://gemini.google.com/u/1/app"
         }
       ],
       "key" : "f",
