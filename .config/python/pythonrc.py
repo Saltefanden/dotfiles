@@ -1,4 +1,3 @@
-# This line makes vs_codes jupyter environment work (uglyyy! make it better)
 if not __doc__ == 'Automatically created module for IPython interactive environment':
     import sys
 
@@ -45,7 +44,8 @@ if not __doc__ == 'Automatically created module for IPython interactive environm
         repl.wrap_lines = True
 
         # Mouse support.
-        repl.enable_mouse_support = True
+        # repl.enable_mouse_support = True
+        repl.enable_mouse_support = False
 
         # Complete while typing. (Don't require tab before the
         # completion menu is shown.)
