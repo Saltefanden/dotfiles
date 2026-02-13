@@ -6,3 +6,5 @@
 *.zcompcache
 **/.zcompcache
 .zcompcache
+.zsh_history
+.zsh_sessions
