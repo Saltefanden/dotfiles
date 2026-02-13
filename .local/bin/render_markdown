@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+
+TMPFILE=$(mktemp)
+pandoc $1 --from markdown --to html --standalone -o $TMPFILE
+firefox $TMPFILE
+
