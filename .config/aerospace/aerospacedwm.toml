@@ -21,90 +21,90 @@ accordion-padding = 20
 
 # Mouse behavior (DWM-like)
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
-automatically-unhide-macos-hidden-apps = false
+automatically-unhide-macos-hidden-apps = true
 
 # DWM uses zero gaps by default
 [gaps]
-inner.horizontal    = 6
-inner.vertical      = 6
-outer.left          = 3
-# outer.left          = [{ monitor."PHL 346B1C" = 500 }, 3]
-outer.bottom        = 3
-#outer.top           = 6
-#outer.top = [{ monitor."PHL 346B1C" = 37 }, { monitor."DELL P2419H" = 28 }, 5]
-outer.top = [{ monitor."PHL 346B1C" = 37 }, { monitor."DELL P2419H" = 37 }, 5]
-outer.right         = 3
-#outer.right         = [{ monitor."PHL 346B1C" = 500 }, 3]
+    inner.horizontal    = 6
+    inner.vertical      = 6
+    outer.left          = 3
+    # outer.left          = [{ monitor."PHL 346B1C" = 500 }, 3]
+    outer.bottom        = 3
+    #outer.top           = 6
+    #outer.top = [{ monitor."PHL 346B1C" = 37 }, { monitor."DELL P2419H" = 28 }, 5]
+    outer.top = [{ monitor."PHL 346B1C" = 37 }, { monitor."DELL P2419H" = 37 }, 5]
+    outer.right         = 3
+    #outer.right         = [{ monitor."PHL 346B1C" = 500 }, 3]
 
 [key-mapping]
-preset = 'qwerty'
+    preset = 'qwerty'
 
 # Main mode bindings (following dwm's default mod key paradigm)
 [mode.main.binding]
-# Layouts (dwm-style) - Modified to avoid conflicts
-cmd-y = 'layout tiles horizontal vertical'  # Changed from cmd-t to avoid conflict with "New Tab"
-cmd-u = 'layout floating tiling'           # Changed from cmd-f to avoid conflict with "Find"
-alt-tab = 'workspace-back-and-forth'
-cmd-m = 'fullscreen'
-cmd-a = 'layout accordion horizontal'
-cmd-shift-enter = 'exec-and-forget open -n /Applications/Alacritty.app'
+    # Layouts (dwm-style) - Modified to avoid conflicts
+    cmd-y = 'layout tiles horizontal vertical'  # Changed from cmd-t to avoid conflict with "New Tab"
+    cmd-u = 'layout floating tiling'           # Changed from cmd-f to avoid conflict with "Find"
+    alt-tab = 'workspace-back-and-forth'
+    cmd-m = 'fullscreen'
+    cmd-a = 'layout accordion horizontal'
+    cmd-shift-enter = 'exec-and-forget open -n /Applications/Alacritty.app'
 
-# Basic window operations (dwm-style)
-cmd-shift-c = 'close'                      # Close window (dwm default)
-cmd-h = 'focus left'
-cmd-j = 'focus down'                       # Focus next window
-cmd-k = 'focus up'                         # Focus prev window
-cmd-l = 'focus right'
-cmd-shift-h = 'move left'
-cmd-shift-j = 'move down'                  # Move window forward
-cmd-shift-k = 'move up'                    # Move window backward
-cmd-shift-l = 'move right'
+    # Basic window operations (dwm-style)
+    cmd-shift-c = 'close'                      # Close window (dwm default)
+    cmd-h = 'focus left'
+    cmd-j = 'focus down'                       # Focus next window
+    cmd-k = 'focus up'                         # Focus prev window
+    cmd-l = 'focus right'
+    cmd-shift-h = 'move left'
+    cmd-shift-j = 'move down'                  # Move window forward
+    cmd-shift-k = 'move up'                    # Move window backward
+    cmd-shift-l = 'move right'
 
-# Master/stack operations (approximating dwm behavior)
-cmd-i = 'resize smart +50'                 # Increase master area
-cmd-d = 'resize smart -50'                 # Decrease master area
+    # Master/stack operations (approximating dwm behavior)
+    cmd-i = 'resize smart +50'                 # Increase master area
+    cmd-d = 'resize smart -50'                 # Decrease master area
 
-# Tag (workspace) switching - using numbers like dwm
-cmd-1 = 'workspace 1'
-cmd-2 = 'workspace 2'
-cmd-3 = 'workspace 3'
-cmd-4 = 'workspace 4'
-cmd-5 = 'workspace 5'
-cmd-6 = 'workspace 6'
-cmd-7 = 'workspace 7'
-cmd-8 = 'workspace 8'
-cmd-9 = 'workspace 9'
+    # Tag (workspace) switching - using numbers like dwm
+    cmd-1 = 'workspace 1'
+    cmd-2 = 'workspace 2'
+    cmd-3 = 'workspace 3'
+    cmd-4 = 'workspace 4'
+    cmd-5 = 'workspace 5'
+    cmd-6 = 'workspace 6'
+    cmd-7 = 'workspace 7'
+    cmd-8 = 'workspace 8'
+    cmd-9 = 'workspace 9'
 
-# Move windows to tags (workspaces) - Modified to use alt+cmd
-cmd-shift-1 = 'move-node-to-workspace 1 --focus-follows-window'
-cmd-shift-2 = 'move-node-to-workspace 2 --focus-follows-window'
-cmd-shift-3 = 'move-node-to-workspace 3 --focus-follows-window'
-cmd-shift-4 = 'move-node-to-workspace 4 --focus-follows-window'
-cmd-shift-5 = 'move-node-to-workspace 5 --focus-follows-window'
-cmd-shift-6 = 'move-node-to-workspace 6 --focus-follows-window'
-cmd-shift-7 = 'move-node-to-workspace 7 --focus-follows-window'
-cmd-shift-8 = 'move-node-to-workspace 8 --focus-follows-window'
-cmd-shift-9 = 'move-node-to-workspace 9 --focus-follows-window'
+    # Move windows to tags (workspaces) - Modified to use alt+cmd
+    cmd-shift-1 = 'move-node-to-workspace 1 --focus-follows-window'
+    cmd-shift-2 = 'move-node-to-workspace 2 --focus-follows-window'
+    cmd-shift-3 = 'move-node-to-workspace 3 --focus-follows-window'
+    cmd-shift-4 = 'move-node-to-workspace 4 --focus-follows-window'
+    cmd-shift-5 = 'move-node-to-workspace 5 --focus-follows-window'
+    cmd-shift-6 = 'move-node-to-workspace 6 --focus-follows-window'
+    cmd-shift-7 = 'move-node-to-workspace 7 --focus-follows-window'
+    cmd-shift-8 = 'move-node-to-workspace 8 --focus-follows-window'
+    cmd-shift-9 = 'move-node-to-workspace 9 --focus-follows-window'
 
-# Monitor controls
-cmd-comma = 'focus-monitor prev'           # Focus prev monitor
-cmd-period = 'focus-monitor next'          # Focus next monitor
-cmd-shift-comma = 'move-workspace-to-monitor prev'    # Move window to prev monitor
-cmd-shift-period = 'move-workspace-to-monitor next'   # Move window to next monitor
+    # Monitor controls
+    cmd-comma = 'focus-monitor prev'           # Focus prev monitor
+    cmd-period = 'focus-monitor next'          # Focus next monitor
+    cmd-shift-comma = 'move-workspace-to-monitor prev'    # Move window to prev monitor
+    cmd-shift-period = 'move-workspace-to-monitor next'   # Move window to next monitor
 
-# Service mode for additional controls
-cmd-shift-semicolon = 'mode service'
+    # Service mode for additional controls
+    cmd-shift-semicolon = 'mode service'
 
 [mode.service.binding]
-esc = ['reload-config', 'mode main']
-r = ['flatten-workspace-tree', 'mode main']    # Reset layout
-# backspace = ['close-all-windows-but-current', 'mode main']
+    esc = ['reload-config', 'mode main']
+    r = ['flatten-workspace-tree', 'mode main']    # Reset layout
+    # backspace = ['close-all-windows-but-current', 'mode main']
 
-# Monitor joining (similar to dwm's merge functionality)
-cmd-shift-h = ['join-with left', 'mode main']
-cmd-shift-j = ['join-with down', 'mode main']
-cmd-shift-k = ['join-with up', 'mode main']
-cmd-shift-l = ['join-with right', 'mode main']
+    # Monitor joining (similar to dwm's merge functionality)
+    cmd-shift-h = ['join-with left', 'mode main']
+    cmd-shift-j = ['join-with down', 'mode main']
+    cmd-shift-k = ['join-with up', 'mode main']
+    cmd-shift-l = ['join-with right', 'mode main']
 
 # Window assignment rules remain unchanged
 # [[on-window-detected]]
@@ -124,8 +124,8 @@ cmd-shift-l = ['join-with right', 'mode main']
 # run = ['move-node-to-workspace 2']
 
 [[on-window-detected]]
-if.app-id = 'com.microsoft.VSCode'
-run = ['move-node-to-workspace 3']
+    if.app-id = 'com.microsoft.VSCode'
+    run = ['move-node-to-workspace 3']
 
 #[[on-window-detected]]
 #if.app-id = 'com.jetbrains.intellij.ce'
@@ -156,20 +156,20 @@ run = ['move-node-to-workspace 3']
 #run = ['move-node-to-workspace 5']
 
 [[on-window-detected]]
-if.app-id = 'com.linear'
-run = ['move-node-to-workspace 7']
+    if.app-id = 'com.linear'
+    run = ['move-node-to-workspace 7']
 
 [[on-window-detected]]
-if.app-id = 'notion.id'
-run = ['move-node-to-workspace 8']
+    if.app-id = 'notion.id'
+    run = ['move-node-to-workspace 8']
 
 [[on-window-detected]]
-if.app-id = 'com.cron.electron'
-run = ['move-node-to-workspace 8']
+    if.app-id = 'com.cron.electron'
+    run = ['move-node-to-workspace 8']
 
 [[on-window-detected]]
-if.app-id = 'com.tinyspeck.slackmacgap'
-run = ['move-node-to-workspace 9']
+    if.app-id = 'com.tinyspeck.slackmacgap'
+    run = ['move-node-to-workspace 9']
 
 #[[on-window-detected]]
 #if.app-id = 'com.toggl.toggldesktop'  # Time tracking
