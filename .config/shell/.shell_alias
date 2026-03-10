@@ -8,3 +8,4 @@ alias ....='cd ../../..'
 alias .='source'
 alias .v='echo source .venv/bin/activate; source .venv/bin/activate'
 alias man='man -P "vim -M +MANPAGER --not-a-term -"'
+alias sluk=poweroff
