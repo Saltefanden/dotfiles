@@ -10,3 +10,6 @@
 [submodule ".config/vim/pack/tpope/start/fugitive"]
 	path = .config/vim/pack/tpope/start/fugitive
 	url = git@github.com:tpope/vim-fugitive.git
+[submodule ".config/vim/pack/colors/opt/everforest"]
+	path = .config/vim/pack/colors/opt/everforest
+	url = git@github.com:sainnhe/everforest.git

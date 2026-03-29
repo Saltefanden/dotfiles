@@ -1,5 +1,6 @@
 " Packages?
 packadd! matchit
+packadd! everforest
 
 " defaults
 source $VIMRUNTIME/defaults.vim
@@ -23,10 +24,16 @@ set statusline=%<%f%h%m%r\ %{FugitiveStatusline()}%=%b\ 0x%B\ \ %l,%c%V\ %P
 set hidden
 " Colors and highlighting
 set termguicolors
-let g:codedark_modern=1
-let g:codedark_italics=0
-let g:codedark_transparent=1
-colo codedark
+" let g:codedark_modern=1
+" let g:codedark_italics=0
+" let g:codedark_transparent=1
+" colo codedark
+let g:everforest_enable_italic = 0
+let g:everforest_disable_italic_comment = 1
+let g:everforest_transparent_background=1
+let g:everforest_ui_contrast='high'
+let g:everforest_background='hard'
+colo everforest
 
 " Set netrw home to the home folder rather than the .vim folder
 let g:netrw_home=$HOME
