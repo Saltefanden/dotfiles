@@ -1,3 +1,12 @@
 [submodule ".config/vim/pack/tpope/start/unimpaired"]
 	path = .config/vim/pack/tpope/start/unimpaired
-	url = https://tpope.io/vim/unimpaired.git
+	url = https://github.com/tpope/vim-unimpaired.git/
+[submodule ".config/vim/pack/tpope/start/commentary"]
+	path = .config/vim/pack/tpope/start/commentary
+	url = git@github.com:tpope/vim-commentary.git
+[submodule ".config/vim/pack/tpope/start/surround"]
+	path = .config/vim/pack/tpope/start/surround
+	url = git@github.com:tpope/vim-surround.git
+[submodule ".config/vim/pack/tpope/start/fugitive"]
+	path = .config/vim/pack/tpope/start/fugitive
+	url = git@github.com:tpope/vim-fugitive.git
