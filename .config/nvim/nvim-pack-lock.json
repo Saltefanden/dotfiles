@@ -1,0 +1,32 @@
+{
+  "plugins": {
+    "mini.completion": {
+      "rev": "667d94669be66043123cac44e7c5d65a31657732",
+      "src": "https://github.com/nvim-mini/mini.completion"
+    },
+    "mini.keymap": {
+      "rev": "dc3b688b26a810f519cdd0572a27587a138ced78",
+      "src": "https://github.com/nvim-mini/mini.keymap"
+    },
+    "mini.pairs": {
+      "rev": "42387c7fe68fc0b6e95eaf37f1bb76e7bffaa0d9",
+      "src": "https://github.com/nvim-mini/mini.pairs"
+    },
+    "nordic.nvim": {
+      "rev": "c38a210bdaf79e74823d88c741029cac7f6b4481",
+      "src": "https://github.com/AlexvZyl/nordic.nvim"
+    },
+    "nvim-treesitter": {
+      "rev": "4916d6592ede8c07973490d9322f187e07dfefac",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    },
+    "vim-fugitive": {
+      "rev": "3b753cf8c6a4dcde6edee8827d464ba9b8c4a6f0",
+      "src": "https://github.com/tpope/vim-fugitive"
+    },
+    "vim-surround": {
+      "rev": "3d188ed2113431cf8dac77be61b842acb64433d9",
+      "src": "https://github.com/tpope/vim-surround"
+    }
+  }
+}

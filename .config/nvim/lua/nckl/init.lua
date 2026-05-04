@@ -1,0 +1,6 @@
+require("nckl.plugins")
+require("nckl.config.mappings")
+require("nckl.config.options")
+require("nckl.config.autocommands")
+require("nckl.config.usercommands")
+require("nckl.config.diagnostic")

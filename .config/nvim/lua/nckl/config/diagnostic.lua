@@ -1,0 +1,23 @@
+-- Note to self! 
+-- All of this crap is due to the E and W in the sign column from the lsp. This
+-- is all the diagnostic stuff that I was playing around with.. Here are the remnants
+
+
+-- vim.diagnostic.handlers.loclist = {
+--   show = function(_, _, _, opts)
+--     -- Generally don't want it to open on every update
+--     opts.loclist.open = opts.loclist.open or false
+--     local winid = vim.api.nvim_get_current_win()
+--     vim.diagnostic.setloclist(opts.loclist)
+--     vim.api.nvim_set_current_win(winid)
+--   end
+-- }
+--
+-- vim.diagnostic.config({
+--     underline=false,
+--     loclist = {
+--         open = true,
+--         severity = {min = vim.diagnostic.severity.INFO},
+--     }
+-- })
+--
