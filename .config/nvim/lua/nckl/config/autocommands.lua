@@ -17,7 +17,7 @@ vim.api.nvim_create_autocmd("BufReadPost", {
 	pattern = "*",
 	callback = function()
         if vim.o.diff then -- except in diff mode
-            return 
+            return
         end
         local line = vim.fn.line("'\"")
         if line > 1 and line <= vim.fn.line("$") then
@@ -39,8 +39,8 @@ vim.api.nvim_create_autocmd("VimEnter", {
 
 vim.api.nvim_create_autocmd('FileType', {
   pattern = { "bash", "c", "cpp", "json", "lua", "markdown", "markdown_inline", "python", "julia" },
-  callback = function() 
-      vim.treesitter.start() 
+  callback = function()
+      vim.treesitter.start()
       vim.wo[0][0].foldexpr = 'v:lua.vim.treesitter.foldexpr()'
       vim.wo[0][0].foldmethod = 'expr'
       vim.o.foldenable = false

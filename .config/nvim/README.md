@@ -1,1 +1,1 @@
-Requires installing tree-sitter-cli
+Requires installing tree-sitter-cli, ruff, ty, lua_ls, ripgrep
