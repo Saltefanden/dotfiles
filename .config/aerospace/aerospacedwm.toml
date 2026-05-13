@@ -47,7 +47,7 @@ automatically-unhide-macos-hidden-apps = true
     alt-tab = 'workspace-back-and-forth'
     cmd-m = 'fullscreen'
     cmd-a = 'layout accordion horizontal'
-    cmd-shift-enter = 'exec-and-forget open -n /Applications/Alacritty.app'
+    cmd-shift-enter = 'exec-and-forget open -n /Applications/Ghostty.app'
 
     # Basic window operations (dwm-style)
     cmd-shift-c = 'close'                      # Close window (dwm default)
