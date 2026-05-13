@@ -58,19 +58,19 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
 # Change cursor shape for different vi modes.
-function zle-keymap-select () {
-    case $KEYMAP in
-        vicmd|main) echo -ne '\e[1 q';;      # block
-        viins) echo -ne '\e[5 q';; # beam
-    esac
-}
-zle -N zle-keymap-select
-zle-line-init() {
-    echo -ne "\e[1 q"
-}
-zle -N zle-line-init
-echo -ne '\e[1 q' # Use block shape cursor on startup.
-preexec() { echo -ne '\e[1 q' ;} # Use block shape cursor for each new prompt.
+# function zle-keymap-select () {
+#     case $KEYMAP in
+#         vicmd|main) echo -ne '\e[1 q';;      # block
+#         viins) echo -ne '\e[5 q';; # beam
+#     esac
+# }
+# zle -N zle-keymap-select
+# zle-line-init() {
+#     echo -ne "\e[1 q"
+# }
+# zle -N zle-line-init
+# echo -ne '\e[1 q' # Use block shape cursor on startup.
+# preexec() { echo -ne '\e[1 q' ;} # Use block shape cursor for each new prompt.
 
 
 # Add shell aliases
