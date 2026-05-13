@@ -7,7 +7,7 @@ require("mini.ai").setup()
 
 require("mini.pairs").setup()
 require("mini.diff").setup()
-require('mini.statusline').setup()
+-- require('mini.statusline').setup()
 
 require("mini.extra").setup()
 require("mini.pick").setup()
