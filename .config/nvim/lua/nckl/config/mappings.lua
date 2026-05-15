@@ -33,8 +33,10 @@ nmap_leader('el', function()
 nmap_leader("ev", "<Cmd>e $MYVIMRC<CR>", "Edit init.lua/vimrc")
 nmap_leader("ez", "<Cmd>e $XDG_CONFIG_HOME/zsh/.zshrc<CR>", "Open zshrc")
 -- Terminals
-nmap_leader("<Enter>", "<Cmd>OpenTerm side<CR>", "Open a terminal to the right")
-nmap_leader("<leader>", "<Cmd>OpenTerm bottom<CR>", "Open a terminal on the bottom")
+nmap_leader("<Enter>", "<Cmd>TermToggle side<CR>", "Open a terminal to the right")
+nmap_leader("<leader>", "<Cmd>TermToggle bottom<CR>", "Open a terminal on the bottom")
+-- vim.keymap.set("n", "<leader>t", vim.cmd.TermToggle, { desc = "Toggle [T]erminal", silent = true })
+-- vim.keymap.set("t", "<C-t>", vim.cmd.TermToggle, { desc = "Toggle [^][T]erminal", silent = true })
 
 nmap_leader("c", "<Cmd>DiffOrig<CR>", "Inspect diff")
 
