@@ -116,9 +116,9 @@ vim.keymap.set("i", "<C-0>", function()
 )
 
 
--- Use <Esc> to exit terminal mode
-vim.keymap.set("t", "<Esc>", '<C-\\><C-n>',
-    { desc = "Use <Esc> to exit terminal mode" })
+-- Use <C-space> to exit terminal mode
+vim.keymap.set("t", "<C-space>", '<C-\\><C-n>',
+    { desc = "Use <C-space> to exit terminal mode" })
 
 
 vim.keymap.set("n", "<C-j>", "<Cmd>m .+1<CR>==") -- Errors on invalid range..
