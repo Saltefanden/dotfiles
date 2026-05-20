@@ -20,6 +20,10 @@
       "rev": "45be993a5617e05811b6b293c05e6aded7003cc9",
       "src": "https://github.com/aliqyan-21/darkvoid.nvim"
     },
+    "image.nvim": {
+      "rev": "44e07129cd0ea0c60afa7a1991d35b5765b51a6b",
+      "src": "https://github.com/3rd/image.nvim"
+    },
     "lackluster.nvim": {
       "rev": "70dd682e564784893b984deb51dd5ddd263c8cc7",
       "src": "https://github.com/slugbyte/lackluster.nvim"
