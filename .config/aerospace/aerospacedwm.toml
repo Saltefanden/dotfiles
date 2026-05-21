@@ -46,7 +46,7 @@ automatically-unhide-macos-hidden-apps = true
     cmd-u = 'layout floating tiling'           # Changed from cmd-f to avoid conflict with "Find"
     alt-tab = 'workspace-back-and-forth'
     cmd-m = 'fullscreen'
-    cmd-a = 'layout accordion horizontal'
+    cmd-shift-space = 'layout accordion horizontal'
     cmd-shift-enter = 'exec-and-forget open -n /Applications/Ghostty.app'
 
     # Basic window operations (dwm-style)
