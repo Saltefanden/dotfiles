@@ -24,6 +24,7 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 automatically-unhide-macos-hidden-apps = true
 
 # DWM uses zero gaps by default
+# Get monitors from the System settings -> Display -> Copy whatever name the monitor has?
 [gaps]
     inner.horizontal    = 6
     inner.vertical      = 6
@@ -32,7 +33,7 @@ automatically-unhide-macos-hidden-apps = true
     outer.bottom        = 3
     #outer.top           = 6
     #outer.top = [{ monitor."PHL 346B1C" = 37 }, { monitor."DELL P2419H" = 28 }, 5]
-    outer.top = [{ monitor."PHL 346B1C" = 37 }, { monitor."DELL P2419H" = 37 }, 5]
+    outer.top = [{ monitor."C34H89x" = 37 }, { monitor."PHL 346B1C" = 37 }, { monitor."DELL P2419H" = 37 }, 5]
     outer.right         = 3
     #outer.right         = [{ monitor."PHL 346B1C" = 500 }, 3]
 
