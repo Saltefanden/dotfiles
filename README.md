@@ -2,6 +2,14 @@
 
 Repository containing my dotfiles. 
 
+## Git submodules
+
+To update the git submodules
+
+$ git submodule update --init --recursive
+
+## Stow
+
 From the project directory, run:
 
 	> stow .
