@@ -1,0 +1,10 @@
+-- vim.pack.add({
+--     'https://github.com/barrettruth/canola.nvim'
+-- })
+-- require('oil').setup(
+--     {
+--         -- default_file_explorer = false
+--     }
+-- )
+--
+-- vim.keymap.set('n', '<leader>1', "<Cmd>Oil<CR>", { desc = "Oil"})

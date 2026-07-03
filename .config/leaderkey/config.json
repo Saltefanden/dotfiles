@@ -1,0 +1,144 @@
+{
+  "actions" : [
+    {
+      "actions" : [
+        {
+          "key" : "p",
+          "type" : "application",
+          "value" : "/Applications/Pritunl.app"
+        },
+        {
+          "key" : "n",
+          "type" : "application",
+          "value" : "/Applications/Notion.app"
+        },
+        {
+          "key" : "l",
+          "type" : "application",
+          "value" : "/Applications/Linear.app"
+        },
+        {
+          "key" : "s",
+          "type" : "application",
+          "value" : "/Applications/Slack.app"
+        },
+        {
+          "key" : "1",
+          "type" : "application",
+          "value" : "/Applications/1Password.app"
+        },
+        {
+          "key" : "m",
+          "type" : "application",
+          "value" : "/Applications/Notion Calendar.app"
+        },
+        {
+          "key" : "c",
+          "type" : "application",
+          "value" : "/Applications/Visual Studio Code.app"
+        },
+        {
+          "key" : "f",
+          "type" : "application",
+          "value" : "/Applications/Firefox.app"
+        },
+        {
+          "key" : "t",
+          "type" : "application",
+          "value" : "/Applications/TablePlus.app"
+        }
+      ],
+      "key" : "a",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "o",
+          "type" : "url",
+          "value" : "https://ageras.okta.com/app/UserHome"
+        },
+        {
+          "key" : "c",
+          "type" : "url",
+          "value" : "https://chatgpt.com/"
+        },
+        {
+          "key" : "e",
+          "type" : "url",
+          "value" : "https://mail.google.com/mail/u/0/#inbox"
+        },
+        {
+          "key" : "g",
+          "type" : "url",
+          "value" : "https://github.com/"
+        },
+        {
+          "key" : "m",
+          "type" : "url",
+          "value" : "https://calendar.google.com/calendar/u/0/r"
+        },
+        {
+          "key" : "y",
+          "type" : "url",
+          "value" : "https://www.youtube.com/"
+        },
+        {
+          "key" : "u",
+          "type" : "url",
+          "value" : "https://id.eu.cultureamp.com/app/auth"
+        },
+        {
+          "key" : "i",
+          "type" : "url",
+          "value" : "https://app.circleci.com/projects/project-dashboard/github/billysbilling"
+        },
+        {
+          "key" : "s",
+          "type" : "url",
+          "value" : "https://mit.staging.billy.dk/"
+        },
+        {
+          "key" : "b",
+          "type" : "url",
+          "value" : "https://mit.billy.dk"
+        },
+        {
+          "key" : "l",
+          "type" : "url",
+          "value" : "https://gemini.google.com/u/1/app"
+        }
+      ],
+      "key" : "f",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "e",
+          "type" : "command",
+          "value" : "zsh -c \"printenv\"; read;"
+        }
+      ],
+      "key" : "c",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "c",
+          "type" : "command",
+          "value" : "/bin/zsh -ic \"source ~/.zprofile; /usr/local/bin/code -n\""
+        },
+        {
+          "key" : "f",
+          "type" : "command",
+          "value" : "/usr/local/bin/firefox"
+        }
+      ],
+      "key" : "n",
+      "type" : "group"
+    }
+  ],
+  "type" : "group"
+}

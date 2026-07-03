@@ -1,0 +1,7 @@
+# Xorg Remove beeping
+# $ xset -b
+# You can add this command to a startup file such as /etc/xprofile to make it permanent. See xprofile and xset(1) for more information.
+# Called from xinitrc
+picom &
+export GTK_THEME=Adawaita:dark
+

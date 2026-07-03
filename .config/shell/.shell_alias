@@ -1,0 +1,13 @@
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias less='less -Q'
+alias man='man -P "less -Q"'
+alias la='ls -la'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .='source'
+alias .v='echo source .venv/bin/activate; source .venv/bin/activate'
+alias man='man -P "vim -M +MANPAGER --not-a-term -"'
+alias sluk=poweroff
+alias vim='nvim'
+alias nvimconf="nvim $XDG_CONFIG_HOME/nvim"

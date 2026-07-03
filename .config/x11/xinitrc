@@ -1,0 +1,20 @@
+# Make sure this is before the 'exec' command or it won't be sourced.
+# Runs of startx
+
+[ -f /etc/xprofile ] && . /etc/xprofile
+
+if [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile" ]; then
+	. "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile"
+else
+	. "$HOME/.xprofile"
+fi
+
+
+# feh --bg-fill -z ~/wallpaper/1728663147694619.png
+# wal -i ~/wallpaper/1728663147694619.png
+setxkbmap -option caps:escape
+wal -R
+xset r rate 170 30
+xset s off
+exec dwmblocks &
+exec dwm

@@ -1,0 +1,58 @@
+language en_US.UTF-8
+" Packages?
+packadd! matchit
+packadd! everforest
+
+" defaults
+source $VIMRUNTIME/defaults.vim
+syntax on
+set mouse&
+
+" Regular vim functionaliy
+set nu rnu
+set scrolloff=3
+set colorcolumn=80
+set cursorline
+set ignorecase
+set hlsearch
+set showmatch
+set matchtime=1
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set laststatus=2
+set statusline=%<%f%h%m%r\ %{FugitiveStatusline()}%=%b\ 0x%B\ \ %l,%c%V\ %P
+set hidden
+set nowrap
+" Colors and highlighting
+set termguicolors
+" let g:codedark_modern=1
+" let g:codedark_italics=0
+" let g:codedark_transparent=1
+" colo codedark
+let g:everforest_enable_italic = 0
+let g:everforest_disable_italic_comment = 1
+let g:everforest_transparent_background=1
+let g:everforest_ui_contrast='high'
+let g:everforest_background='hard'
+let g:everforest_cursor='auto'
+colo everforest
+
+" Set netrw home to the home folder rather than the .vim folder
+let g:netrw_home=$HOME
+
+"" As per 
+"" https://www.youtube.com/watch?v=XA2WjJbmmoM&list=PL8tzorAO7s0jy7DQ3Q0FwF3BnXGQnDirs
+"" Enables fuzzy finding of subdirectories???
+"" The appended number, <N>, in **<N> determines the search depth
+"set path+=**3
+
+" Use CTRL-L to clear the highlighting of 'hlsearch' (off by default) and call
+" :diffupdate.
+if maparg('<C-L>', 'n') ==# ''
+  nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
+endif
+
+nnoremap <leader>m :w \| make <Enter>
+
+nmap <leader>l :set list!<CR>

@@ -1,0 +1,4 @@
+librewolf-bin
+minecraft-launcher
+yay
+yay-debug
