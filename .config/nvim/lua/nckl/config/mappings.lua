@@ -140,7 +140,13 @@ vim.keymap.set( {"n", "v"} , "<leader>y", "\"+y",
 vim.keymap.set( {"n", "v"} , "<leader>Y", "\"+Y",
     { desc = "Use system clipboard with <leader>Y" })
 
-vim.keymap.set( "x", "<leader>p", '"_dP',
+vim.keymap.set( {"n", "v"}, "<leader>p", "\"+p", 
+    { desc = "Use system clipboard with <leader>p" })
+
+vim.keymap.set( {"n", "v"}, "<leader>P", "\"+P", 
+    { desc = "Use system clipboard with <leader>P" })
+
+vim.keymap.set( "x", "\\p", '"_dP',
     { desc = "In visual mode exclusively (not select mode), paste without yanking" })
 
 vim.keymap.set( { "n", "v" }, "<leader>x", '"_d',
