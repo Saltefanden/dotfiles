@@ -4,7 +4,9 @@ Repository containing my dotfiles.
 
 ## Git submodules
 
-To update the git submodules
+$ git clone --recurse-submodules URL
+
+If you forgot then use:
 
 $ git submodule update --init --recursive
 
