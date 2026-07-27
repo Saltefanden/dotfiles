@@ -8,6 +8,12 @@ require("mini.ai").setup()
 require("mini.pairs").setup()
 require("mini.diff").setup()
 require('mini.statusline').setup()
+local hipatterns = require("mini.hipatterns")
+hipatterns.setup({
+    highlighters = {
+        hex_color = hipatterns.gen_highlighter.hex_color(),
+    }
+})
 
 require("mini.extra").setup()
 require("mini.pick").setup()
