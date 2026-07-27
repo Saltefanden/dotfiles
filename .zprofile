@@ -5,6 +5,7 @@
 export VISUAL="vim"
 export EDITOR="vim"
 export TERMINAL="st"
+export MANPAGER="nvim +Man!"
 
 # Freedesktop specifications
 export XDG_CONFIG_HOME="$HOME/.config"
