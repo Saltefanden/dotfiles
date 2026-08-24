@@ -2,8 +2,8 @@
 #
 # Only for login shells - This applies on your main login (before e.g. startx) but not in every instance of your terminal emulator
 
-export VISUAL="vim"
-export EDITOR="vim"
+export VISUAL="nvim"
+export EDITOR="nvim"
 export TERMINAL="st"
 export MANPAGER="nvim +Man!"
 
