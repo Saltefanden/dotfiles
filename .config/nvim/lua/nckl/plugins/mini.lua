@@ -2,10 +2,35 @@
 -- vim.pack.add({
 --     'https://github.com/nvim-mini/mini.nvim'
 -- })
-
 require("mini.ai").setup()
 
-require("mini.pairs").setup()
+require("mini.pairs").setup({
+    -- In which modes mappings from this `config` should be created
+    modes = { insert = true, command = false, terminal = false },
+
+    -- Global mappings. Each right hand side should be a pair information, a
+    -- table with at least these fields (see more in |MiniPairs.map()|):
+    -- - <action> - one of "open", "close", "closeopen".
+    -- - <pair> - two character string for pair to be used.
+    -- By default pair is not inserted after `\`, quotes are not recognized by
+    -- <CR>, `'` does not insert the pair after a letter.
+    -- Only parts of tables can be tweaked (others will use these defaults).
+    -- Supply `false` instead of table to not map particular key.
+    mappings = {
+      ['('] = { action = 'open', pair = '()', neigh_pattern = '[^\\\'][^%a\\]' },
+      ['['] = { action = 'open', pair = '[]', neigh_pattern = '[^\\\'][^%a\\]' },
+      ['{'] = { action = 'open', pair = '{}', neigh_pattern = '[^\\\'][^%a\\]' },
+
+      [')'] = { action = 'close', pair = '()', neigh_pattern = '^[^%a\\]' },
+      [']'] = { action = 'close', pair = '[]', neigh_pattern = '^[^%a\\]' },
+      ['}'] = { action = 'close', pair = '{}', neigh_pattern = '^[^%a\\]' },
+
+      ['"'] = { action = 'closeopen', pair = '""', neigh_pattern = '[^%a\\][^%a\\]',   register = { cr = false } },
+      ["'"] = { action = 'closeopen', pair = "''", neigh_pattern = '[^%a\\][^%a\\]', register = { cr = false } },
+      ['`'] = { action = 'closeopen', pair = '``', neigh_pattern = '[^%a\\][^%a\\]',   register = { cr = false } },
+  }
+})
+
 require("mini.diff").setup()
 require('mini.statusline').setup()
 local hipatterns = require("mini.hipatterns")
