@@ -107,6 +107,11 @@
           "key" : "l",
           "type" : "url",
           "value" : "https://gemini.google.com/u/1/app"
+        },
+        {
+          "key" : "a",
+          "type" : "url",
+          "value" : "https://claude.ai/new"
         }
       ],
       "key" : "f",
