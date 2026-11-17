@@ -73,6 +73,10 @@ bindkey -v '^?' backward-delete-char
 # preexec() { echo -ne '\e[1 q' ;} # Use block shape cursor for each new prompt.
 
 
+export FZF_ALT_C_OPTS="
+  --walker-skip .git,node_modules,target,.claude,.cache
+  --preview 'tree -C {}'"
+
 # Add shell aliases
 source_if_exists "$XDG_CONFIG_HOME/shell/.shell_alias"
 
