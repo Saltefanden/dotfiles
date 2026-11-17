@@ -57,3 +57,11 @@ vim.o.completeopt     = 'menuone,noselect,fuzzy,nosort' -- Use custom behavior
 vim.cmd[[
     set path+=**
 ]]
+
+
+-- netrw
+
+vim.g.netrw_banner = 0
+vim.g.netrw_preview = 1
+vim.g.netrw_liststyle = 3
+vim.g.netrw_winsize   = 30

@@ -16,6 +16,7 @@ end
 if vim.fn.maparg("<leader>1", "n") == "" then
     nmap_leader("1", "<Cmd>Ex<CR>", "Ex")
 end
+nmap_leader("2", "<Cmd>Lex<CR>", "Lex")
 nmap_leader("ed", "<Cmd>e .<CR>", "Open file navigation")
 nmap_leader("esd", "<Cmd>vsp .<CR>", "Split open file at cwd")
 -- Local window navigation maps
